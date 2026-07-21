@@ -17,7 +17,7 @@ public class RedisConfig {
         template.setHashKeySerializer(new StringRedisSerializer());
 
         template.setValueSerializer(new StringRedisSerializer());
-        template.setHashKeySerializer(new StringRedisSerializer());
+        template.setHashValueSerializer(new StringRedisSerializer());
 
         template.afterPropertiesSet();
         System.out.println(template);
